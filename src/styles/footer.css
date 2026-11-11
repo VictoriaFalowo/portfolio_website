@@ -1,0 +1,3 @@
+.site-footer { width: min(100% - 2 * var(--page-gutter), var(--content-width)); margin: var(--space-6) auto 0; padding: var(--space-3) 0; border-top: 1px dashed var(--mauve); display: flex; justify-content: space-between; gap: var(--space-2); color: var(--sand); font-size: .75rem; }
+.site-footer div { display: flex; gap: var(--space-3); }
+.site-footer a { text-decoration: none; }
