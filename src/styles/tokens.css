@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap');
+
+:root {
+  --ink: #3E3239;
+  --plum: #6B5560;
+  --mauve: #9E8189;
+  --rose: #C7A9A3;
+  --sand: #E8D2C4;
+  --cream: #F7EFE7;
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-body: 'DM Sans', sans-serif;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --space-6: 4.5rem;
+  --space-7: 7rem;
+  --page-gutter: 1.25rem;
+  --content-width: 76rem;
+}

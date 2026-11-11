@@ -1,0 +1,7 @@
+.hero { padding-block: var(--space-7) var(--space-6); max-width: 48rem; }
+.hero h1 { font-size: clamp(3.5rem, 10vw, 7rem); margin: var(--space-2) 0; }
+.hero-copy { color: var(--sand); max-width: 36rem; margin-bottom: var(--space-3); }
+.home-section { min-height: 10rem; padding-block: var(--space-2); }
+.contact-shell .button { margin-top: var(--space-3); }
+.project-stub { min-height: 60vh; padding-block: var(--space-7); }
+.project-stub h1 { font-size: clamp(2.5rem, 7vw, 5rem); }

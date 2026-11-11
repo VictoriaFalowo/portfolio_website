@@ -1,0 +1,1 @@
+.placeholder { min-height: 12rem; border: 2px dashed var(--rose); display: grid; place-items: center; color: var(--sand); letter-spacing: .1em; font-size: .75rem; text-align: center; padding: var(--space-2); }

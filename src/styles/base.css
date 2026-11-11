@@ -1,0 +1,15 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--ink); color: var(--cream); font-family: var(--font-body); font-size: 1rem; line-height: 1.6; }
+a { color: inherit; }
+button { font: inherit; }
+img, iframe { max-width: 100%; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.1; }
+:focus-visible { outline: 2px dashed var(--sand); outline-offset: 4px; }
+.eyebrow { color: var(--sand); font-size: .75rem; letter-spacing: .12em; }
+.button { display: inline-block; padding: .75rem 1.25rem; border-radius: 999px; background: var(--sand); color: var(--ink); text-decoration: none; letter-spacing: .06em; font-size: .8rem; transition: outline-color .18s ease; }
+.button:hover, .button:focus-visible { outline: 2px dashed var(--rose); outline-offset: 4px; }
+main { width: min(100% - 2 * var(--page-gutter), var(--content-width)); margin-inline: auto; }
+@media (min-width: 640px) { :root { --page-gutter: 2rem; } }
+@media (min-width: 960px) { :root { --page-gutter: 4rem; } }
