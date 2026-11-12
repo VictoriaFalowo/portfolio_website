@@ -4,11 +4,18 @@ export const content = {
   name: 'Victoria Falowo',
   matricNumber: '23120112022',
   email: 'victoria.m.falowo@gmail.com',
+  roleLabel: 'SOFTWARE ENGINEER',
   intro: 'INTRODUCTION PLACEHOLDER',
-  about: 'ABOUT PLACEHOLDER',
+  about: {
+    labels: { who: 'WHO I AM', what: 'WHAT I DO', focus: 'MY FOCUS' },
+    who: 'WHO I AM PLACEHOLDER',
+    what: 'WHAT I DO PLACEHOLDER',
+    focus: 'MY FOCUS PLACEHOLDER',
+    outsideWork: 'WATCHING SHOWS AND KNITTING — PERSONAL NOTE PLACEHOLDER',
+  },
   experience: [
     { company: 'EY', type: 'INTERNSHIP', role: 'ROLE PLACEHOLDER', dates: 'DATES PLACEHOLDER', description: 'DESCRIPTION PLACEHOLDER' },
-    { company: 'Convenda Labs', type: 'INTERNSHIP', role: 'ROLE PLACEHOLDER', dates: 'DATES PLACEHOLDER', description: 'DESCRIPTION PLACEHOLDER' },
+    { company: 'CONVENDA LABS', type: 'INTERNSHIP', role: 'ROLE PLACEHOLDER', dates: 'DATES PLACEHOLDER', description: 'DESCRIPTION PLACEHOLDER' },
   ],
   projects: [
     { slug: 'PROJECT-ONE', name: 'PROJECT ONE NAME HERE', description: 'SHORT DESCRIPTION PLACEHOLDER', image: null, stack: ['React Native', 'React'], liveLink: null, repoLink: null },
