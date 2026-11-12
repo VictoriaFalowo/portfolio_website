@@ -1,7 +1,22 @@
-.hero { padding-block: var(--space-7) var(--space-6); max-width: 48rem; }
+.hero { padding-block: var(--space-7) var(--space-6); min-height: 28rem; display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; }
+.hero-copy-block { max-width: 48rem; }
 .hero h1 { font-size: clamp(3.5rem, 10vw, 7rem); margin: var(--space-2) 0; }
 .hero-copy { color: var(--sand); max-width: 36rem; margin-bottom: var(--space-3); }
 .home-section { min-height: 10rem; padding-block: var(--space-2); }
+.about-section, .experience-section { padding-block: var(--space-3); }
+.about-copy { display: grid; gap: var(--space-3); margin-top: var(--space-4); }
+.about-copy h3 { color: var(--sand); font-size: 1.35rem; margin-bottom: var(--space-1); }
+.about-copy p { max-width: 44rem; margin-bottom: 0; }
+.about-note { border-left: 2px dashed var(--rose); padding-left: var(--space-2); color: var(--sand); }
+.experience-list { list-style: none; padding: 0 0 0 var(--space-3); margin: var(--space-4) 0 0 var(--space-1); border-left: 2px dashed var(--mauve); }
 .contact-shell .button { margin-top: var(--space-3); }
 .project-stub { min-height: 60vh; padding-block: var(--space-7); }
 .project-stub h1 { font-size: clamp(2.5rem, 7vw, 5rem); }
+@media (min-width: 640px) {
+  .about-copy { grid-template-columns: 1fr 1fr; column-gap: var(--space-5); }
+  .about-note { grid-column: 1 / -1; }
+}
+@media (min-width: 960px) {
+  .hero { grid-template-columns: minmax(0, 1fr) minmax(16rem, .72fr); min-height: 34rem; }
+  .experience-list { max-width: 48rem; }
+}
