@@ -1,22 +1,32 @@
 .hero { padding-block: var(--space-7) var(--space-6); min-height: 28rem; display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; }
-.hero-copy-block { max-width: 48rem; }
-.hero h1 { font-size: clamp(3.5rem, 10vw, 7rem); margin: var(--space-2) 0; }
+.hero-copy-block { max-width: 48rem; min-width: 0; }
+.hero h1 { font-size: clamp(2.5rem, 10vw, 7rem); margin: var(--space-2) 0; overflow-wrap: anywhere; }
 .hero-copy { color: var(--sand); max-width: 36rem; margin-bottom: var(--space-3); }
 .home-section { min-height: 10rem; padding-block: var(--space-2); }
 .about-section, .experience-section { padding-block: var(--space-3); }
-.about-copy { display: grid; gap: var(--space-3); margin-top: var(--space-4); }
+.about-copy { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-3); margin-top: var(--space-4); }
+.about-copy > * { min-width: 0; }
 .about-copy h3 { color: var(--sand); font-size: 1.35rem; margin-bottom: var(--space-1); }
 .about-copy p { max-width: 44rem; margin-bottom: 0; }
 .about-note { border-left: 2px dashed var(--rose); padding-left: var(--space-2); color: var(--sand); }
 .experience-list { list-style: none; padding: 0 0 0 var(--space-3); margin: var(--space-4) 0 0 var(--space-1); border-left: 2px dashed var(--mauve); }
 .contact-shell .button { margin-top: var(--space-3); }
-.project-stub { min-height: 60vh; padding-block: var(--space-7); }
-.project-stub h1 { font-size: clamp(2.5rem, 7vw, 5rem); }
+.projects-grid { display: grid; gap: var(--space-3); margin-top: var(--space-4); }
+.project-card { border-radius: 1.25rem; padding: var(--space-2); background: var(--veil); display: flex; flex-direction: column; height: 100%; }
+.project-image { height: clamp(18rem, 34vw, 26rem); display: grid; place-items: center; border: 1px dashed var(--rose); border-radius: .8rem; color: var(--sand); background: repeating-linear-gradient(135deg, var(--veil) 0 8px, transparent 8px 16px); font-size: .75rem; letter-spacing: .12em; }
+.project-image img { width: 100%; height: 100%; min-height: 10rem; object-fit: cover; object-position: center; border-radius: inherit; }
+.project-card-copy { padding: var(--space-2) .25rem .25rem; display: flex; flex: 1; flex-direction: column; }
+.project-card h3 { font-size: 1.7rem; }
+.project-actions { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; margin-top: auto; padding-top: var(--space-2); }
+.project-detail-link { align-self: flex-start; display: inline-block; margin-top: var(--space-1); margin-bottom: var(--space-2); color: var(--sand); font-size: .9rem; letter-spacing: .06em; }
+.contact-shell h3 { margin-top: var(--space-3); font-size: clamp(2rem, 5vw, 3.5rem); }
 @media (min-width: 640px) {
-  .about-copy { grid-template-columns: 1fr 1fr; column-gap: var(--space-5); }
+  .about-copy { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: var(--space-5); }
   .about-note { grid-column: 1 / -1; }
 }
 @media (min-width: 960px) {
-  .hero { grid-template-columns: minmax(0, 1fr) minmax(16rem, .72fr); min-height: 34rem; }
+  .hero { grid-template-columns: minmax(0, 1fr); min-height: 34rem; }
   .experience-list { max-width: 48rem; }
+  .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: var(--space-4); }
+  .project-card:nth-child(3) { grid-column: 1 / -1; width: calc(50% - var(--space-2)); justify-self: center; }
 }

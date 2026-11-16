@@ -1,7 +1,18 @@
-# Victoria Falowo — Portfolio
+# Victoria Falowo - Portfolio
 
-**Name:** Victoria Falowo  
-**Matric number:** 23120112022
+Personal portfolio for CSC 419 at Pan-Atlantic University.
+
+- **Matric number:** 23120112022
+- **Live site:** [vfalowo.vercel.app](https://vfalowo.vercel.app/)
+
+The site includes an introduction, about and experience sections, three project cards, a contact call to action, and a details page for the Greedy Pig post-game statistics project.
+
+## Stack
+
+- React
+- Vite
+- React Router
+- Plain CSS
 
 ## Run locally
 
@@ -10,6 +21,4 @@ npm install
 npm run dev
 ```
 
-Create a production build with `npm run build`, or preview it with `npm run preview`.
-
-Live URL: TODO
+Project copy and portfolio details are maintained in `src/data/content.js`.
